@@ -1,9 +1,9 @@
 import { ReactElement, useState } from 'react';
-import { ITask, ITaskBoardProps } from '../pages/interfaces';
+import { ITask } from '../pages/interfaces';
 import { TaskForm } from './TaskForm';
 import { TaskItem } from './TaskItem';
 
-export function TaskBoard(props: ITaskBoardProps): ReactElement {
+export function TaskBoard(): ReactElement {
   const [tasks, setTasks] = useState<ITask[]>([]);
 
   const addTask = (text: string, author: string) => {
