@@ -12,6 +12,6 @@ export interface ITaskItemProps {
     onRemove: (id: number) => void;
   }
 
-export interface ITaskForm {
+export interface ITaskFormProps {
     onAddTask: (text: string, author: string) => void;
 }
