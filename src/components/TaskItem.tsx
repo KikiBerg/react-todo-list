@@ -1,11 +1,5 @@
 import { ReactElement } from 'react';
-import { ITask } from '../pages/interfaces';
-
-interface ITaskItemProps {
-  task: ITask;
-  onToggleComplete: (id: number) => void;
-  onRemove: (id: number) => void;
-}
+import { ITaskItemProps } from '../pages/interfaces';
 
 export function TaskItem(props: ITaskItemProps): ReactElement {
   const { task, onToggleComplete, onRemove } = props;

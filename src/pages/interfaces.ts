@@ -5,3 +5,13 @@ export interface ITask {
     timestamp: Date;
     author: string;
 }
+
+export interface ITaskItemProps {
+    task: ITask;
+    onToggleComplete: (id: number) => void;
+    onRemove: (id: number) => void;
+  }
+
+export interface ITaskForm {
+    onAddTask: (text: string, author: string) => void;
+}
