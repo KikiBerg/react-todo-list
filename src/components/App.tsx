@@ -1,7 +1,16 @@
-export function App() {
+import { ReactElement } from 'react';
+import { TaskBoard } from '.';
+import '../css/App.css';
+
+export function App():ReactElement {
   return (
-    <>
-      <h1>This is the App component</h1>
-    </>
+    <div className="App">
+      <header className="App-header">
+        <h1>Todo List Application</h1>
+      </header>
+      <main>
+        <TaskBoard />
+      </main>
+    </div>
   );
 }

@@ -1,5 +1,6 @@
 import { ReactElement } from 'react';
 import { ITaskItemProps } from '../pages/interfaces';
+import '../css/TaskItem.css';
 
 export function TaskItem(props: ITaskItemProps): ReactElement {
   const { task, onToggleComplete, onRemove } = props;

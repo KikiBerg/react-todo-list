@@ -2,6 +2,7 @@ import { ReactElement, useState } from 'react';
 import { ITask } from '../pages/interfaces';
 import { TaskForm } from './TaskForm';
 import { TaskItem } from './TaskItem';
+import '../css/TaskBoard.css';
 
 export function TaskBoard(): ReactElement {
   const [tasks, setTasks] = useState<ITask[]>([]);

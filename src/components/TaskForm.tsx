@@ -1,5 +1,6 @@
 import { ReactElement, useState } from "react";
 import { ITaskFormProps } from "../pages/interfaces";
+import '../css/TaskForm.css';
 
 export function TaskForm (props: ITaskFormProps): ReactElement {
     const { onAddTask } = props;
