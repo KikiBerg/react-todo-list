@@ -15,3 +15,5 @@ export interface ITaskItemProps {
 export interface ITaskFormProps {
     onAddTask: (text: string, author: string) => void;
 }
+
+export interface ITaskBoardProps {}
