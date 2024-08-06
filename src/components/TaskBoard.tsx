@@ -1,12 +1,10 @@
-import { ReactElement, useState } from 'react';
-import { ITask } from '../interfaces';
+import { ReactElement } from 'react';
+import { ITask, ITaskBoardProps } from '../interfaces';
 import { TaskForm } from './TaskForm';
 import { TaskItem } from './TaskItem';
 import '../css/TaskBoard.css';
 
-export function TaskBoard(): ReactElement {
-  const [tasks, setTasks] = useState<ITask[]>([]);
-
+export function TaskBoard({ tasks, setTasks }: ITaskBoardProps): ReactElement {
   const addTask = (text: string, author: string) => {
     const newTask: ITask = {
       id: Date.now(),
