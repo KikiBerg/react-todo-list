@@ -21,9 +21,9 @@ export function AddTaskPage(): ReactElement {
   };
 
   return (
-    <div>
+    <div className="add-task">
       <h1>Add New Task</h1>
-      <TaskForm onAddTask={handleAddTask} />
+      <TaskForm onAddTask={handleAddTask} />   
     </div>
   );
 }
