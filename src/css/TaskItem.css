@@ -4,6 +4,7 @@
     padding: 10px;
     border-bottom: 1px solid var(--secondary-color);
     gap: 10px;
+    justify-content: space-evenly
   }
   
   .task-item:last-child {
@@ -27,6 +28,7 @@
   
   .task-item button {
     background-color: var(--accent-color);
+    margin-left: auto;
   }
   
   @media (max-width: 600px) {
