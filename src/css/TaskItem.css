@@ -7,6 +7,10 @@
     justify-content: space-evenly
   }
   
+  .task-item input[type="checkbox"] {
+    margin-right: 10px;
+  }
+
   .task-item:last-child {
     border-bottom: none;
   }

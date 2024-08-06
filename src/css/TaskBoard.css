@@ -1,17 +1,19 @@
 .task-board {
-    background-color: white;
-    border-radius: var(--border-radius);
-    padding: 20px;
-    box-shadow: var(--box-shadow);
+  background-color: #fdfdfd;
+  border-radius: var(--border-radius);
+  padding: 20px;
+  box-shadow: var(--box-shadow);
+  width: 100%;
+}
+
+.task-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+@media (max-width: 600px) {
+  .task-board {
+    padding: 10px;
   }
-  
-  .task-list {
-    margin-top: 20px;
-  }
-  
-  @media (max-width: 600px) {
-    .task-board {
-      padding: 10px;
-    }
-  }
-  
+}
