@@ -2,6 +2,7 @@ import { ReactElement } from 'react';
 import { useOutletContext, useNavigate } from 'react-router-dom';
 import { TaskForm } from '../components';
 import { ITask, ITaskContext } from '../interfaces';
+import '../css/AddTaskPage.css'
 
 export function AddTaskPage(): ReactElement {
   const { tasks, setTasks } = useOutletContext<ITaskContext>();

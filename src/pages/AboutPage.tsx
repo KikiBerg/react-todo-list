@@ -1,6 +1,7 @@
 import { ReactElement } from 'react';
 import { useOutletContext } from 'react-router-dom';
 import { ITaskContext } from '../interfaces';
+import '../css/AboutPage.css'
 
 export function AboutPage(): ReactElement {
   const { tasks } = useOutletContext<ITaskContext>();

@@ -1,0 +1,11 @@
+.about {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  @media (max-width: 600px) {
+    .about {
+      padding: 10px;
+    }
+  }
+  
