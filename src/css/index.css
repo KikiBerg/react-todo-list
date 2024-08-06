@@ -1,0 +1,43 @@
+:root {
+    --primary-color: #845ec2;
+    --secondary-color: #b39cd0;
+    --background-color: #fbeaff;
+    --accent-color: #00c9a7;
+    --text-color: #333;
+    --border-radius: 8px;
+    --box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  button {
+    cursor: pointer;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: var(--border-radius);
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: var(--secondary-color);
+  }
+  
+  input[type="text"], input[type="checkbox"] {
+    border: 1px solid var(--secondary-color);
+    border-radius: var(--border-radius);
+    padding: 8px;
+  }
+  
+  input[type="checkbox"] {
+    accent-color: var(--accent-color);
+  }
+  

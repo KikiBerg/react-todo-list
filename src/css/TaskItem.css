@@ -1,0 +1,43 @@
+.task-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid var(--secondary-color);
+    gap: 10px;
+  }
+  
+  .task-item:last-child {
+    border-bottom: none;
+  }
+  
+  .task-item.completed span {
+    text-decoration: line-through;
+    color: var(--secondary-color);
+  }
+  
+  .task-item .text {
+    flex-grow: 1;
+  }
+  
+  .task-item .author,
+  .task-item .timestamp {
+    font-size: 0.8em;
+    color: var(--secondary-color);
+  }
+  
+  .task-item button {
+    background-color: var(--accent-color);
+  }
+  
+  @media (max-width: 600px) {
+    .task-item {
+      flex-wrap: wrap;
+    }
+  
+    .task-item .author,
+    .task-item .timestamp {
+      width: 100%;
+      text-align: right;
+    }
+  }
+  

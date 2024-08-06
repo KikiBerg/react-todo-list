@@ -1,6 +1,6 @@
 import { ReactElement } from 'react';
-import { TaskBoard } from '.';
-import '../css/App.css';
+import { TaskBoard } from './components';
+import './css/App.css';
 
 export function App():ReactElement {
   return (

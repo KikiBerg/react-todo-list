@@ -1,5 +1,5 @@
 import { ReactElement } from 'react';
-import { ITaskItemProps } from '../pages/interfaces';
+import { ITaskItemProps } from '../interfaces';
 import '../css/TaskItem.css';
 
 export function TaskItem(props: ITaskItemProps): ReactElement {

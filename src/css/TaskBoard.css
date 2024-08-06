@@ -1,0 +1,17 @@
+.task-board {
+    background-color: white;
+    border-radius: var(--border-radius);
+    padding: 20px;
+    box-shadow: var(--box-shadow);
+  }
+  
+  .task-list {
+    margin-top: 20px;
+  }
+  
+  @media (max-width: 600px) {
+    .task-board {
+      padding: 10px;
+    }
+  }
+  
