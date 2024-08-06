@@ -16,7 +16,7 @@ export interface ITaskFormProps {
   onAddTask: (text: string, author: string) => void;
 }
 
-export interface ITaskBoardProps {
+export interface ITaskContext {
   tasks: ITask[];
   setTasks: React.Dispatch<React.SetStateAction<ITask[]>>;
 }
