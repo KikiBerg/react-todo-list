@@ -7,10 +7,11 @@
   border-radius: 5px;
   margin-bottom: 10px;
   background-color: #f9f9f9;
+  transition: background-color 0.3s ease;
 }
 
 .task-item.completed {
-  background-color: #e8f5e9;
+  background-color: var(--completed-color);
 }
 
 .task-content {
@@ -34,6 +35,21 @@
   font-size: 16px;
   line-height: 1.4;
   word-break: break-word;
+  transition: text-decoration 0.3s ease, color 0.3s ease;
+}
+
+/* Styles for completed tasks */
+.task-item.completed .task-text  {
+  text-decoration: line-through;
+  color: #b4b4b4;
+}
+
+.task-item.completed .author  { 
+  color: #b4b4b4;
+}
+
+.task-item.completed .timestamp  { 
+  color: #b4b4b4;
 }
 
 .task-meta {
