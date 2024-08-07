@@ -1,5 +1,6 @@
 import { ReactElement } from 'react';
 import { ISortTasksProps } from '../interfaces';
+import '../css/SortTasks.css'
 
 export function SortTasks(props: ISortTasksProps): ReactElement {
   const { onSort } = props;
