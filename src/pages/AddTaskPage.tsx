@@ -15,6 +15,7 @@ export function AddTaskPage(): ReactElement {
       completed: false,
       timestamp: new Date(),
       author,
+      order: 0
     };
     setTasks([...tasks, newTask]);
     navigate('/');

@@ -77,7 +77,7 @@
 }
 
 .task-actions button:hover {
-  background-color: #e0e0e0;
+  background-color: var(--secondary-color);
 }
 
 .task-actions button:last-child {
