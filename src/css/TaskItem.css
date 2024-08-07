@@ -1,49 +1,69 @@
 .task-item {
-    display: flex;
-    align-items: center;
-    padding: 10px;
-    border-bottom: 1px solid var(--secondary-color);
-    gap: 10px;
-    justify-content: space-evenly
-  }
-  
-  .task-item input[type="checkbox"] {
-    margin-right: 10px;
-  }
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 15px;
+  border: 1px solid var(--secondary-color);
+  border-radius: 5px;
+  margin-bottom: 10px;
+  background-color: #f9f9f9;
+}
 
-  .task-item:last-child {
-    border-bottom: none;
-  }
-  
-  .task-item.completed span {
-    text-decoration: line-through;
-    color: var(--secondary-color);
-  }
-  
-  .task-item .text {
-    flex-grow: 1;
-  }
-  
-  .task-item .author,
-  .task-item .timestamp {
-    font-size: 0.8em;
-    color: var(--secondary-color);
-  }
-  
-  .task-item button {
-    background-color: var(--accent-color);
-    margin-left: auto;
-  }
-  
-  @media (max-width: 600px) {
-    .task-item {
-      flex-wrap: wrap;
-    }
-  
-    .task-item .author,
-    .task-item .timestamp {
-      width: 100%;
-      text-align: right;
-    }
-  }
-  
+.task-item.completed {
+  background-color: #e8f5e9;
+}
+
+.task-content {
+  display: flex;
+  align-items: flex-start;
+  flex-grow: 1;
+  margin-right: 20px;
+}
+
+.task-content input[type="checkbox"] {
+  margin-right: 15px;
+  margin-top: 3px;
+}
+
+.task-details {
+  flex-grow: 1;
+}
+
+.task-text {
+  margin: 0 0 5px 0;
+  font-size: 16px;
+  line-height: 1.4;
+  word-break: break-word;
+}
+
+.task-meta {
+  font-size: 12px;
+  color: #666;
+}
+
+.task-meta .author {
+  margin-right: 10px;
+}
+
+.task-actions {
+  display: flex;
+  flex-direction: column;
+}
+
+.task-actions button {
+  margin-bottom: 5px;
+  padding: 5px 10px;
+  background-color: var(--accent-color);
+  border: 1px solid var(--secondary-color);
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.task-actions button:hover {
+  background-color: #e0e0e0;
+}
+
+.task-actions button:last-child {
+  margin-bottom: 0;
+}

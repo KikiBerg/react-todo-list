@@ -1,5 +1,5 @@
 import { ReactElement } from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import '../css/Header.css';
 
 export function Header(): ReactElement {
@@ -8,13 +8,34 @@ export function Header(): ReactElement {
       <nav className="nav">
         <ul className="nav-list">
           <li className="nav-item">
-            <Link to="/" className="nav-link">Home</Link>
+            <NavLink
+              to="/"
+              className={({ isActive }) =>
+                isActive ? 'nav-link active' : 'nav-link'
+              }
+            >
+              Home
+            </NavLink>
           </li>
           <li className="nav-item">
-            <Link to="/add" className="nav-link">Add Task</Link>
+            <NavLink
+              to="/add"
+              className={({ isActive }) =>
+                isActive ? 'nav-link active' : 'nav-link'
+              }
+            >
+              Add Task
+            </NavLink>
           </li>
           <li className="nav-item">
-            <Link to="/about" className="nav-link">About</Link>
+            <NavLink
+              to="/about"
+              className={({ isActive }) =>
+                isActive ? 'nav-link active' : 'nav-link'
+              }
+            >
+              About
+            </NavLink>
           </li>
         </ul>
       </nav>

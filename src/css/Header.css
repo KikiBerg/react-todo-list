@@ -33,3 +33,8 @@
   .nav-link:hover {
     background-color: var(--secondary-color);
   }
+
+  .nav-link.active {
+    color: var(--accent-color);
+    font-weight: 800; 
+  }
