@@ -1,5 +1,6 @@
 import { ReactElement, useState } from 'react';
 import { IEditTaskModalProps } from '../interfaces';
+import '../css/EditTaskModal.css'
 
 export function EditTaskModal(props: IEditTaskModalProps): ReactElement {
   const { task, onClose, onSave } = props;

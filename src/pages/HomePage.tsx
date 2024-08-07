@@ -8,7 +8,7 @@ export function HomePage(): ReactElement {
   const { tasks, setTasks } = useOutletContext<ITaskContext>();
 
   return (
-    <div>
+    <div className="home">
       <h1>Todo List</h1>
       <TaskBoard tasks={tasks} setTasks={setTasks} />
     </div>
